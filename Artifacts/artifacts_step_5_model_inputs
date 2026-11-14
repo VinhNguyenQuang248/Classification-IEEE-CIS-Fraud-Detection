@@ -1,1 +1,11 @@
+# Step 5 - Model Input Artifacts
 
+This directory is used to store the processed datasets prepared as inputs for the machine learning models.
+
+The generated model input files, including the feature matrices (`X_*.npy`) and target arrays (`y_train.npy` and `y_val.npy`), are stored separately on Google Drive due to their large file sizes.
+
+The files can be accessed through the project's Google Drive directory:
+
+`IEEE_CIS_Project/artifacts/artifacts_step5_model_inputs/`
+
+These artifacts are generated during the model input preparation stage of the main notebook.
