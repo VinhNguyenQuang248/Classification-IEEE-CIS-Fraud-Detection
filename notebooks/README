@@ -1,1 +1,5 @@
+# Notebooks
 
+This directory contains the consolidated end-to-end Jupyter Notebook for the IEEE-CIS Fraud Detection project.
+
+- `IEEE_CIS_Project_END.ipynb`: Complete workflow covering data preparation, feature engineering, feature selection, preprocessing, model training, and evaluation.
