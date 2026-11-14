@@ -1,0 +1,3 @@
+Nhom_Identity,So_luong_Giao_dich,Ty_trong_pct,So_ca_Fraud,Fraud_Rate_pct,CI_95_Low_pct,CI_95_High_pct,Chenh_lech_vs_Nhom_bu_pp,Risk_Ratio_Lift
+Có bản ghi Identity (has_identity = 1),120464,25.5,9099,7.553,7.405,7.704,5.422,3.545
+Không có Identity (has_identity = 0),351968,74.5,7500,2.131,2.084,2.179,-5.422,0.282
