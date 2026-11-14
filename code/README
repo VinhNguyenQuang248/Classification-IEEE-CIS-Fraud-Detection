@@ -1,1 +1,24 @@
+# Code
 
+This directory contains the Python scripts used to implement the main stages of the IEEE-CIS Fraud Detection project.
+
+## Files
+
+| File | Description |
+|---|---|
+| `step0_setup_and_split.py` | Sets up the project environment, loads and integrates the training datasets, performs initial preprocessing, and creates chronological training and validation splits. |
+| `step1_advanced_eda.py` | Performs Exploratory Data Analysis (EDA) to examine data distributions, missing values, class imbalance, and potential relationships between features and the fraud target. |
+| `step2_feature_engineering.py` | Creates additional features to capture transaction patterns and potentially useful information for fraud detection. |
+| `step3_4_selection_and_handover.py` | Performs feature selection and prepares the selected features and preprocessing outputs for model development. |
+
+## Usage
+
+These scripts support the corresponding stages of the project workflow.
+
+The recommended way to reproduce the complete project is to run the main notebook:
+
+`notebooks/IEEE_CIS_Project_END.ipynb`
+
+The notebook contains the end-to-end implementation and should be executed sequentially in Google Colab or Jupyter Notebook.
+
+**Note:** Ensure that the required dataset files and project directories are available at the paths specified in the notebook before execution.
