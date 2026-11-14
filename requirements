@@ -1,0 +1,6 @@
+numpy==2.4.6
+pandas==2.2.3
+scikit-learn==1.6.1
+joblib==1.6.0
+lightgbm==4.6.0
+xgboost==3.4.1
