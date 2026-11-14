@@ -38,12 +38,18 @@ IEEE-CIS-Fraud-Detection/
 │   ├── step0_setup_and_split.py
 │   ├── step1_advanced_eda.py
 │   ├── step2_feature_engineering.py
-│   └── step3_4_selection_and_handover.py
+│   ├── step3_4_selection_and_handover.py
+│   └── README.md
 │
 ├── outputs/
 │   └── README.md
 │
 ├── artifacts/
+│   ├── artifacts_step0/
+│   ├── artifacts_step1_eda/
+│   ├── artifacts_step2_fe/
+│   ├── artifacts_step3_4_handover/
+│   ├── artifacts_step5_model_inputs/
 │   └── README.md
 │
 ├── README.md
@@ -58,7 +64,7 @@ IEEE-CIS-Fraud-Detection/
 | `notebooks/` | Main end-to-end Jupyter Notebook containing the complete project workflow. |
 | `code/` | Python scripts used for data preparation, EDA, feature engineering, and feature selection. |
 | `outputs/` | Exported evaluation results, tables, and visualization plots. |
-| `artifacts/` | Supporting files generated during the machine learning workflow, such as selected feature configurations. |
+| `artifacts/` | Supporting files and intermediate outputs generated during the machine learning workflow. |
 | `requirements.txt` | Python package dependencies. |
 | `.gitignore` | Specifies files and directories excluded from Git tracking. |
 
@@ -66,44 +72,39 @@ IEEE-CIS-Fraud-Detection/
 
 This project uses the IEEE-CIS Fraud Detection dataset provided by Vesta Corporation through Kaggle.
 
-The original competition dataset contains five files. However, this project uses the following two training files for data integration, preprocessing, feature engineering, and model development:
+Although the original competition dataset contains five files, this project uses only the following two training files:
 
 - `train_transaction.csv`
 - `train_identity.csv`
 
-The two files are merged using `TransactionID`. The resulting dataset is then divided chronologically into training and validation sets.
+These files are merged using `TransactionID`. The resulting dataset is then divided chronologically into training and validation sets.
 
-The remaining files (`test_transaction.csv`, `test_identity.csv`, and `sample_submission.csv`) are not required to reproduce the current training and evaluation workflow.
-
+The remaining files (`test_transaction.csv`, `test_identity.csv`, and `sample_submission.csv`) are not required for the current training and evaluation workflow.
 
 ### Download the Dataset
 
 1. Visit the [IEEE-CIS Fraud Detection competition on Kaggle](https://www.kaggle.com/competitions/ieee-fraud-detection/data).
-2. Download the dataset files.
-33.Extract the downloaded files.
-
-**Important:** Place the extracted CSV files in the `data/` directory when preparing the project environment.
+2. Sign in to your Kaggle account and accept the competition rules if required.
+3. Download the dataset and extract the files.
+4. Place `train_transaction.csv` and `train_identity.csv` in the `data/` directory.
 
 ## 4. How to Run the Project
 
 The recommended way to run this project is **Google Colab**. The main notebook contains the end-to-end workflow and is designed to be executed sequentially.
 
-### Step 1. Prepare the Dataset
+### Step 1. Prepare the Dataset and Google Drive
 
-Download and extract the IEEE-CIS dataset from Kaggle as described in Section 3.
+Download the two required training files from Kaggle as described in Section 3.
 
-*IMPORTANT* : Create the following directory structure in Google Drive:
+Create the following directory structure in Google Drive:
 
-
+```text
 MyDrive/
 └── IEEE_CIS_Project/
     │
     ├── data/
     │   ├── train_transaction.csv
-    │   ├── train_identity.csv
-    │   ├── test_transaction.csv
-    │   ├── test_identity.csv
-    │   └── sample_submission.csv
+    │   └── train_identity.csv
     │
     ├── code/
     │   ├── step0_setup_and_split.py
@@ -114,19 +115,24 @@ MyDrive/
     ├── outputs/
     │
     └── artifacts/
+        ├── artifacts_step0/
+        ├── artifacts_step1_eda/
+        ├── artifacts_step2_fe/
+        ├── artifacts_step3_4_handover/
+        └── artifacts_step5_model_inputs/
 ```
 
-Upload the dataset CSV files into `data/` and the Python scripts into `code/`.
+Upload the two training CSV files into `data/` and the four Python scripts into `code/`.
+
+The `outputs/` and `artifacts/` directories are used to store generated results and intermediate files during notebook execution.
 
 ### Step 2. Open the Notebook in Google Colab
 
 1. Open the `notebooks/` directory in this GitHub repository.
 2. Select `IEEE_CIS_Project_END.ipynb`.
-3. Download the notebook using the GitHub download option.
+3. Download the notebook from GitHub.
 4. Open [Google Colab](https://colab.research.google.com/).
 5. Select **File → Upload notebook** and upload the downloaded `.ipynb` file.
-
-Alternatively, download the notebook first and open it directly in Google Colab.
 
 ### Step 3. Connect Google Drive
 
@@ -176,18 +182,18 @@ The notebook performs the following stages:
 **Important notes:**
 
 - Do not skip cells unless you understand their dependencies.
-- Keep the required dataset files and project folders in their expected locations.
+- Keep the required dataset files and project directories in their expected locations.
 - Some stages may take considerable time because of the dataset size and model training process.
 - Make sure the Colab runtime has sufficient memory and computational resources.
 
 ### Step 6. Access the Results
 
-After successful execution, generated files are saved in the project directories, mainly:
+After successful execution, generated files are saved in the project directories:
 
-- `outputs/`: model comparison tables, confusion matrices, ROC and Precision-Recall curves, threshold analysis, and feature importance visualizations.
-- `artifacts/`: supporting files and configurations generated during preprocessing and feature selection.
+- `outputs/`: Model comparison tables, confusion matrices, ROC and Precision-Recall curves, threshold analysis, and feature importance visualizations.
+- `artifacts/`: Supporting files, feature configurations, preprocessing objects, and intermediate outputs generated during the workflow.
 
-Some large trained model files are not included in this GitHub repository. They are stored separately in the project environment.
+Some large intermediate files and trained model files are stored separately on Google Drive and are not included in this GitHub repository.
 
 ## 5. Model Evaluation
 
@@ -210,8 +216,8 @@ The experimental results indicate that XGBoost achieves the highest PR-AUC among
 
 To reproduce the experiments:
 
-1. Download the original dataset from Kaggle.
-2. Prepare the required Google Drive directory structure.
+1. Download the two required training files from Kaggle.
+2. Prepare the Google Drive directory structure described in Section 4.
 3. Open the main notebook in Google Colab.
 4. Install the required dependencies.
 5. Execute all notebook cells sequentially.
@@ -221,6 +227,7 @@ The notebook provides the main implementation of the project, while the `code/`,
 ## 7. Notes
 
 - The original dataset is not included in this repository.
+- Only the two training files are required for the current workflow.
 - Large intermediate files and trained model files may be stored separately to avoid unnecessary repository size.
 - Results may vary slightly depending on the runtime environment and computational resources.
 
