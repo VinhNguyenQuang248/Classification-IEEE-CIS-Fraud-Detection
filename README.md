@@ -64,17 +64,17 @@ IEEE-CIS-Fraud-Detection/
 
 ## 3. Dataset
 
-This project uses the **IEEE-CIS Fraud Detection** dataset provided by Vesta Corporation through Kaggle.
+This project uses the IEEE-CIS Fraud Detection dataset provided by Vesta Corporation through Kaggle.
 
-The original dataset contains the following files:
+The original competition dataset contains five files. However, this project uses the following two training files for data integration, preprocessing, feature engineering, and model development:
 
 - `train_transaction.csv`
 - `train_identity.csv`
-- `test_transaction.csv`
-- `test_identity.csv`
-- `sample_submission.csv`
 
-The dataset is not included in this repository because of its size and distribution restrictions.
+The two files are merged using `TransactionID`. The resulting dataset is then divided chronologically into training and validation sets.
+
+The remaining files (`test_transaction.csv`, `test_identity.csv`, and `sample_submission.csv`) are not required to reproduce the current training and evaluation workflow.
+
 
 ### Download the Dataset
 
