@@ -1,0 +1,484 @@
+Feature,Status,Stability_Group,Active_Temporal_Folds,Mean_GBDT_Gain,Mean_Perm_AP_Drop,Mean_Perm_AUC_Drop,Conditional_Missing_Rate,Lift_vs_Complement,Decision_Reason
+TransactionAmt,Selected_Stable,Stable_Feature,5,52241.644,0.0144,0.00697,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+ProductCD,Selected_Stable,Stable_Feature,5,16593.545,0.00422,0.00208,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card1,Selected_Stable,Stable_Feature,5,28777.8706,0.00711,0.003,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card2,Selected_Stable,Stable_Feature,5,23412.1613,0.00409,0.00224,0.0149,0.622,Active across 5/5 temporal folds or core domain feature
+card3,Selected_Stable,Stable_Feature,5,6244.7561,0.00381,0.00052,0.0017,1.205,Active across 5/5 temporal folds or core domain feature
+card4,Selected_Stable,Stable_Feature,3,352.2758,0.00012,4e-05,0.0018,1.126,Active across 3/5 temporal folds or core domain feature
+card5,Selected_Stable,Stable_Feature,5,12273.3541,0.00173,0.00114,0.0067,0.657,Active across 5/5 temporal folds or core domain feature
+card6,Selected_Stable,Stable_Feature,5,58142.9819,0.0184,0.0084,0.0018,1.213,Active across 5/5 temporal folds or core domain feature
+addr1,Selected_Stable,Stable_Feature,5,15353.9662,0.0022,0.00132,0.1138,0.219,Active across 5/5 temporal folds or core domain feature
+addr2,Selected_Regime_Specific,Regime_Specific_Feature,1,78.4916,-0.0,-0.0,0.1138,0.219,"Regime-specific signal (active folds=1, univar_corr=0.035)"
+dist1,Selected_Stable,Stable_Feature,5,8219.1552,0.00115,0.0007,0.6078,0.444,Active across 5/5 temporal folds or core domain feature
+dist2,Selected_Stable,Stable_Feature,3,741.011,0.0,3e-05,0.9321,3.079,Active across 3/5 temporal folds or core domain feature
+P_emaildomain,Selected_Stable,Stable_Feature,5,4072.895,0.00023,0.00025,0.1558,1.211,Active across 5/5 temporal folds or core domain feature
+R_emaildomain,Selected_Stable,Stable_Feature,5,15565.6368,0.00633,0.00099,0.7595,3.752,Active across 5/5 temporal folds or core domain feature
+C1,Selected_Stable,Stable_Feature,5,83930.4541,0.076,0.01437,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C2,Selected_Stable,Stable_Feature,5,11061.4044,0.00403,0.00197,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C3,Selected_Stable,Stable_Feature,2,100.799,1e-05,1e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+C4,Selected_Stable,Stable_Feature,2,931.0166,-0.0,1e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+C5,Selected_Stable,Stable_Feature,5,17147.6071,0.0024,0.00137,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C6,Selected_Stable,Stable_Feature,5,19603.0339,0.00733,0.00442,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C7,Selected_Stable,Stable_Feature,2,423.3714,-0.00048,-1e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+C8,Selected_Stable,Stable_Feature,5,172176.4801,0.02056,0.00519,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C9,Selected_Stable,Stable_Feature,5,13625.4477,0.00315,0.00103,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C10,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with C8 (|rho|=0.972 >= 0.95)
+C11,Selected_Stable,Stable_Feature,5,19672.6389,0.00717,0.00301,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C12,Selected_Stable,Stable_Feature,5,2248.5716,0.00099,0.0001,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C13,Selected_Stable,Stable_Feature,5,72489.3117,0.02168,0.01011,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+C14,Selected_Stable,Stable_Feature,5,208660.5414,0.03136,0.01144,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+D1,Selected_Stable,Stable_Feature,5,6590.4631,0.00277,0.00068,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+D2,Selected_Stable,Stable_Feature,5,110334.2581,0.01795,0.00719,0.4895,0.586,Active across 5/5 temporal folds or core domain feature
+D3,Selected_Stable,Stable_Feature,5,13614.4172,0.00275,0.00097,0.4607,0.721,Active across 5/5 temporal folds or core domain feature
+D4,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Collinear with D12 (|rho|=0.976 >= 0.95)
+D5,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.5373,1.239,Collinear with D7 (|rho|=0.971 >= 0.95)
+D6,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8762,4.039,Collinear with D12 (|rho|=0.993 >= 0.95)
+D7,Selected_Stable,Stable_Feature,3,361.4298,2e-05,1e-05,0.9366,5.466,Active across 3/5 temporal folds or core domain feature
+D8,Selected_Stable,Stable_Feature,5,5318.6554,0.00069,0.00027,0.8696,4.024,Active across 5/5 temporal folds or core domain feature
+D9,Selected_Stable,Stable_Feature,4,1380.1194,0.00016,3e-05,0.8696,4.024,Active across 4/5 temporal folds or core domain feature
+D10,Selected_Stable,Stable_Feature,5,10286.1019,0.00196,0.00044,0.1405,0.662,Active across 5/5 temporal folds or core domain feature
+D11,Selected_Stable,Stable_Feature,5,2631.1878,-8e-05,0.00013,0.5207,0.402,Active across 5/5 temporal folds or core domain feature
+D12,Selected_Stable,Stable_Feature,4,590.978,0.00025,-0.00013,0.8884,4.5,Active across 4/5 temporal folds or core domain feature
+D13,Selected_Stable,Stable_Feature,5,1374.095,0.00042,0.00018,0.8963,4.075,Active across 5/5 temporal folds or core domain feature
+D14,Selected_Stable,Stable_Feature,4,340.4832,0.00013,-0.0,0.8945,4.449,Active across 4/5 temporal folds or core domain feature
+D15,Selected_Stable,Stable_Feature,5,6748.139,0.00054,0.00055,0.1646,0.699,Active across 5/5 temporal folds or core domain feature
+M1,Selected_Regime_Specific,Regime_Specific_Feature,1,33.6758,-0.0,0.0,0.5044,0.401,"Regime-specific signal (active folds=1, univar_corr=0.000)"
+M2,Selected_Stable,Stable_Feature,3,346.7746,0.0001,-0.0,0.5044,0.401,Active across 3/5 temporal folds or core domain feature
+M3,Selected_Stable,Stable_Feature,5,4925.609,0.00349,0.00075,0.5044,0.401,Active across 5/5 temporal folds or core domain feature
+M4,Selected_Stable,Stable_Feature,5,81127.0574,0.01534,0.00807,0.4809,2.693,Active across 5/5 temporal folds or core domain feature
+M5,Selected_Stable,Stable_Feature,5,12043.6095,0.00447,0.00193,0.6001,0.874,Active across 5/5 temporal folds or core domain feature
+M6,Selected_Stable,Stable_Feature,5,10092.3722,0.00245,0.00167,0.2993,0.307,Active across 5/5 temporal folds or core domain feature
+M7,Selected_Stable,Stable_Feature,2,154.8726,4e-05,3e-05,0.635,0.452,Active across 2/5 temporal folds or core domain feature
+M8,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.635,0.452,Zero/negative temporal permutation importance and weak univariate lift
+M9,Selected_Regime_Specific,Regime_Specific_Feature,1,46.4268,0.0,1e-05,0.635,0.452,"Regime-specific signal (active folds=1, univar_corr=0.000)"
+V1,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.5207,0.402,Zero/negative temporal permutation importance and weak univariate lift
+V2,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.5207,0.402,Zero/negative temporal permutation importance and weak univariate lift
+V3,Selected_Regime_Specific,Regime_Specific_Feature,1,51.2834,1e-05,-1e-05,0.5207,0.402,"Regime-specific signal (active folds=1, univar_corr=0.046)"
+V4,Selected_Stable,Stable_Feature,2,395.932,9e-05,7e-05,0.5207,0.402,Active across 2/5 temporal folds or core domain feature
+V5,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.5207,0.402,"Regime-specific signal (active folds=0, univar_corr=0.033)"
+V6,Selected_Stable,Stable_Feature,2,149.928,-0.0,1e-05,0.5207,0.402,Active across 2/5 temporal folds or core domain feature
+V7,Selected_Stable,Stable_Feature,2,339.5808,0.0,-0.0,0.5207,0.402,Active across 2/5 temporal folds or core domain feature
+V8,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.5207,0.402,Zero/negative temporal permutation importance and weak univariate lift
+V9,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.5207,0.402,"Regime-specific signal (active folds=0, univar_corr=0.051)"
+V10,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.5207,0.402,Collinear with V11 (|rho|=0.993 >= 0.95)
+V11,Selected_Stable,Stable_Feature,3,690.6084,0.00037,7e-05,0.5207,0.402,Active across 3/5 temporal folds or core domain feature
+V12,Selected_Stable,Stable_Feature,3,270.395,0.00012,1e-05,0.1406,0.662,Active across 3/5 temporal folds or core domain feature
+V13,Selected_Stable,Stable_Feature,5,2305.0556,0.00074,2e-05,0.1406,0.662,Active across 5/5 temporal folds or core domain feature
+V14,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Zero/negative temporal permutation importance and weak univariate lift
+V15,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V34 (|rho|=0.950 >= 0.95)
+V16,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V34 (|rho|=0.950 >= 0.95)
+V17,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.1406,0.662,"Regime-specific signal (active folds=0, univar_corr=0.164)"
+V18,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V17 (|rho|=1.000 >= 0.95)
+V19,Selected_Stable,Stable_Feature,4,1496.6404,0.00018,0.00035,0.1406,0.662,Active across 4/5 temporal folds or core domain feature
+V20,Selected_Stable,Stable_Feature,5,1747.9112,4e-05,0.00014,0.1406,0.662,Active across 5/5 temporal folds or core domain feature
+V21,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V17 (|rho|=0.997 >= 0.95)
+V22,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V17 (|rho|=0.996 >= 0.95)
+V23,Selected_Stable,Stable_Feature,2,360.3594,0.00011,6e-05,0.1406,0.662,Active across 2/5 temporal folds or core domain feature
+V24,Selected_Stable,Stable_Feature,2,141.1244,2e-05,0.0,0.1406,0.662,Active across 2/5 temporal folds or core domain feature
+V25,Selected_Stable,Stable_Feature,2,151.8054,-6e-05,-0.0,0.1406,0.662,Active across 2/5 temporal folds or core domain feature
+V26,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Zero/negative temporal permutation importance and weak univariate lift
+V27,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Zero/negative temporal permutation importance and weak univariate lift
+V28,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V27 (|rho|=1.000 >= 0.95)
+V29,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V30 (|rho|=0.991 >= 0.95)
+V30,Selected_Stable,Stable_Feature,5,9018.7561,0.0084,0.00258,0.1406,0.662,Active across 5/5 temporal folds or core domain feature
+V31,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.1406,0.662,"Regime-specific signal (active folds=0, univar_corr=0.156)"
+V32,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V31 (|rho|=1.000 >= 0.95)
+V33,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1406,0.662,Collinear with V34 (|rho|=0.980 >= 0.95)
+V34,Selected_Regime_Specific,Regime_Specific_Feature,1,76.1276,9e-05,2e-05,0.1406,0.662,"Regime-specific signal (active folds=1, univar_corr=0.177)"
+V35,Selected_Stable,Stable_Feature,3,1387.527,-6e-05,-1e-05,0.2959,0.958,Active across 3/5 temporal folds or core domain feature
+V36,Selected_Stable,Stable_Feature,2,322.7724,-6e-05,-0.0,0.2959,0.958,Active across 2/5 temporal folds or core domain feature
+V37,Selected_Stable,Stable_Feature,5,4105.683,0.00056,0.00017,0.2959,0.958,Active across 5/5 temporal folds or core domain feature
+V38,Selected_Stable,Stable_Feature,5,2132.3862,0.0005,0.00017,0.2959,0.958,Active across 5/5 temporal folds or core domain feature
+V39,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Collinear with V40 (|rho|=0.998 >= 0.95)
+V40,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.2959,0.958,"Regime-specific signal (active folds=0, univar_corr=0.179)"
+V41,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Zero/negative temporal permutation importance and weak univariate lift
+V42,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Collinear with V40 (|rho|=0.994 >= 0.95)
+V43,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Collinear with V40 (|rho|=0.996 >= 0.95)
+V44,Selected_Stable,Stable_Feature,3,592.9118,0.0002,3e-05,0.2959,0.958,Active across 3/5 temporal folds or core domain feature
+V45,Selected_Stable,Stable_Feature,5,13171.7582,0.00489,0.00057,0.2959,0.958,Active across 5/5 temporal folds or core domain feature
+V46,Selected_Regime_Specific,Regime_Specific_Feature,1,64.59,2e-05,2e-05,0.2959,0.958,"Regime-specific signal (active folds=1, univar_corr=0.106)"
+V47,Selected_Stable,Stable_Feature,4,661.5414,-2e-05,-0.0,0.2959,0.958,Active across 4/5 temporal folds or core domain feature
+V48,Selected_Stable,Stable_Feature,4,9592.2533,0.00268,0.00087,0.2959,0.958,Active across 4/5 temporal folds or core domain feature
+V49,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Collinear with V48 (|rho|=0.994 >= 0.95)
+V50,Selected_Regime_Specific,Regime_Specific_Feature,1,160.7928,8e-05,1e-05,0.2959,0.958,"Regime-specific signal (active folds=1, univar_corr=0.171)"
+V51,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.2959,0.958,Collinear with V52 (|rho|=0.985 >= 0.95)
+V52,Selected_Stable,Stable_Feature,2,162.9688,9e-05,1e-05,0.2959,0.958,Active across 2/5 temporal folds or core domain feature
+V53,Selected_Stable,Stable_Feature,5,7541.7081,0.00086,9e-05,0.1416,0.561,Active across 5/5 temporal folds or core domain feature
+V54,Selected_Stable,Stable_Feature,4,6969.4714,0.00185,0.00081,0.1416,0.561,Active across 4/5 temporal folds or core domain feature
+V55,Selected_Stable,Stable_Feature,5,1606.284,0.00042,7e-05,0.1416,0.561,Active across 5/5 temporal folds or core domain feature
+V56,Selected_Stable,Stable_Feature,5,1508.2122,6e-05,7e-05,0.1416,0.561,Active across 5/5 temporal folds or core domain feature
+V57,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V58 (|rho|=0.998 >= 0.95)
+V58,Selected_Stable,Stable_Feature,3,194.6042,9e-05,-3e-05,0.1416,0.561,Active across 3/5 temporal folds or core domain feature
+V59,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V60 (|rho|=0.997 >= 0.95)
+V60,Selected_Stable,Stable_Feature,2,192.2442,-7e-05,-0.0,0.1416,0.561,Active across 2/5 temporal folds or core domain feature
+V61,Selected_Stable,Stable_Feature,3,2486.5632,0.0007,9e-05,0.1416,0.561,Active across 3/5 temporal folds or core domain feature
+V62,Selected_Stable,Stable_Feature,5,3000.6226,0.00043,0.00031,0.1416,0.561,Active across 5/5 temporal folds or core domain feature
+V63,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V60 (|rho|=0.994 >= 0.95)
+V64,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V60 (|rho|=0.997 >= 0.95)
+V65,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Zero/negative temporal permutation importance and weak univariate lift
+V66,Selected_Stable,Stable_Feature,3,372.4838,2e-05,3e-05,0.1416,0.561,Active across 3/5 temporal folds or core domain feature
+V67,Selected_Stable,Stable_Feature,5,4320.1884,0.00195,0.0005,0.1416,0.561,Active across 5/5 temporal folds or core domain feature
+V68,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Zero/negative temporal permutation importance and weak univariate lift
+V69,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V70 (|rho|=0.992 >= 0.95)
+V70,Selected_Stable,Stable_Feature,5,96173.3421,0.01542,0.0045,0.1416,0.561,Active across 5/5 temporal folds or core domain feature
+V71,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V58 (|rho|=0.956 >= 0.95)
+V72,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V58 (|rho|=0.958 >= 0.95)
+V73,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1416,0.561,Collinear with V74 (|rho|=0.980 >= 0.95)
+V74,Selected_Regime_Specific,Regime_Specific_Feature,1,300.4422,-4e-05,-1e-05,0.1416,0.561,"Regime-specific signal (active folds=1, univar_corr=0.168)"
+V75,Selected_Stable,Stable_Feature,5,2368.2972,0.00061,0.0004,0.1647,0.7,Active across 5/5 temporal folds or core domain feature
+V76,Selected_Stable,Stable_Feature,5,3201.8914,0.00316,0.0004,0.1647,0.7,Active across 5/5 temporal folds or core domain feature
+V77,Selected_Stable,Stable_Feature,4,1407.572,4e-05,5e-05,0.1647,0.7,Active across 4/5 temporal folds or core domain feature
+V78,Selected_Stable,Stable_Feature,5,1925.8598,-0.00021,0.00019,0.1647,0.7,Active across 5/5 temporal folds or core domain feature
+V79,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Collinear with V94 (|rho|=0.972 >= 0.95)
+V80,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Collinear with V81 (|rho|=0.999 >= 0.95)
+V81,Selected_Stable,Stable_Feature,4,284.4524,2e-05,-2e-05,0.1647,0.7,Active across 4/5 temporal folds or core domain feature
+V82,Selected_Stable,Stable_Feature,3,883.9902,0.0003,0.00022,0.1647,0.7,Active across 3/5 temporal folds or core domain feature
+V83,Selected_Stable,Stable_Feature,5,7099.9888,0.00072,0.0004,0.1647,0.7,Active across 5/5 temporal folds or core domain feature
+V84,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Collinear with V81 (|rho|=0.995 >= 0.95)
+V85,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Collinear with V81 (|rho|=0.996 >= 0.95)
+V86,Selected_Stable,Stable_Feature,3,1038.0386,0.0002,8e-05,0.1647,0.7,Active across 3/5 temporal folds or core domain feature
+V87,Selected_Stable,Stable_Feature,5,5742.4268,0.00122,0.00048,0.1647,0.7,Active across 5/5 temporal folds or core domain feature
+V88,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Zero/negative temporal permutation importance and weak univariate lift
+V89,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Zero/negative temporal permutation importance and weak univariate lift
+V90,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Collinear with V91 (|rho|=0.994 >= 0.95)
+V91,Selected_Stable,Stable_Feature,5,7398.7759,0.00305,0.00094,0.1647,0.7,Active across 5/5 temporal folds or core domain feature
+V92,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.1647,0.7,Collinear with V93 (|rho|=1.000 >= 0.95)
+V93,Selected_Stable,Stable_Feature,2,147.4172,9e-05,4e-05,0.1647,0.7,Active across 2/5 temporal folds or core domain feature
+V94,Selected_Regime_Specific,Regime_Specific_Feature,1,195.2042,0.00167,0.00022,0.1647,0.7,"Regime-specific signal (active folds=1, univar_corr=0.182)"
+V95,Selected_Regime_Specific,Regime_Specific_Feature,1,255.43,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.093)"
+V96,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V127 (|rho|=0.980 >= 0.95)
+V97,Selected_Stable,Stable_Feature,3,614.3694,-0.0001,-1e-05,0.0002,0.682,Active across 3/5 temporal folds or core domain feature
+V98,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V129 (|rho|=1.000 >= 0.95)
+V99,Selected_Stable,Stable_Feature,4,2991.2737,0.00031,-9e-05,0.0002,0.682,Active across 4/5 temporal folds or core domain feature
+V100,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V131 (|rho|=0.996 >= 0.95)
+V101,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.111)"
+V102,Selected_Stable,Stable_Feature,5,4564.3956,7e-05,0.0001,0.0002,0.682,Active across 5/5 temporal folds or core domain feature
+V103,Selected_Regime_Specific,Regime_Specific_Feature,1,77.128,-5e-05,0.0,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.120)"
+V104,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Zero/negative temporal permutation importance and weak univariate lift
+V105,Selected_Regime_Specific,Regime_Specific_Feature,1,190.8394,-6e-05,-6e-05,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.024)"
+V106,Selected_Stable,Stable_Feature,2,188.9924,-4e-05,-6e-05,0.0002,0.682,Active across 2/5 temporal folds or core domain feature
+V107,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Zero/negative temporal permutation importance and weak univariate lift
+V108,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.081)"
+V109,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.047)"
+V110,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.064)"
+V111,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.123)"
+V112,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.092)"
+V113,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.110)"
+V114,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.071)"
+V115,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.041)"
+V116,Selected_Regime_Specific,Regime_Specific_Feature,1,88.8226,3e-05,2e-05,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.057)"
+V117,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.053)"
+V118,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.039)"
+V119,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.046)"
+V120,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Zero/negative temporal permutation importance and weak univariate lift
+V121,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Zero/negative temporal permutation importance and weak univariate lift
+V122,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Zero/negative temporal permutation importance and weak univariate lift
+V123,Selected_Regime_Specific,Regime_Specific_Feature,1,63.2744,1e-05,-1e-05,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.094)"
+V124,Selected_Regime_Specific,Regime_Specific_Feature,1,69.161,-1e-05,1e-05,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.054)"
+V125,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0002,0.682,"Regime-specific signal (active folds=0, univar_corr=0.080)"
+V126,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V95 (|rho|=0.997 >= 0.95)
+V127,Selected_Stable,Stable_Feature,4,1039.8126,0.00025,0.0001,0.0002,0.682,Active across 4/5 temporal folds or core domain feature
+V128,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V97 (|rho|=0.992 >= 0.95)
+V129,Selected_Regime_Specific,Regime_Specific_Feature,1,425.3836,5e-05,7e-05,0.0002,0.682,"Regime-specific signal (active folds=1, univar_corr=0.031)"
+V130,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V99 (|rho|=0.987 >= 0.95)
+V131,Selected_Stable,Stable_Feature,3,938.0798,-2e-05,-7e-05,0.0002,0.682,Active across 3/5 temporal folds or core domain feature
+V132,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V101 (|rho|=0.999 >= 0.95)
+V133,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V102 (|rho|=0.999 >= 0.95)
+V134,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V103 (|rho|=0.999 >= 0.95)
+V135,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V104 (|rho|=1.000 >= 0.95)
+V136,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V105 (|rho|=0.999 >= 0.95)
+V137,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0002,0.682,Collinear with V106 (|rho|=1.000 >= 0.95)
+V138,Selected_Regime_Specific,Regime_Specific_Feature,1,177.7248,0.00102,-8e-05,0.8525,1.284,"Regime-specific signal (active folds=1, univar_corr=0.070)"
+V139,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V140 (|rho|=0.989 >= 0.95)
+V140,Selected_Stable,Stable_Feature,5,2078.7986,0.00034,3e-05,0.8525,1.284,Active across 5/5 temporal folds or core domain feature
+V141,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V161 (|rho|=1.000 >= 0.95)
+V142,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V161 (|rho|=0.984 >= 0.95)
+V143,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V165 (|rho|=0.967 >= 0.95)
+V144,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V145 (|rho|=0.970 >= 0.95)
+V145,Selected_Stable,Stable_Feature,3,3030.3536,0.00173,0.00022,0.8525,1.284,Active across 3/5 temporal folds or core domain feature
+V146,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V147 (|rho|=0.985 >= 0.95)
+V147,Selected_Stable,Stable_Feature,3,437.3736,6e-05,-2e-05,0.8525,1.284,Active across 3/5 temporal folds or core domain feature
+V148,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V155 (|rho|=0.990 >= 0.95)
+V149,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V158 (|rho|=0.952 >= 0.95)
+V150,Selected_Stable,Stable_Feature,3,254.0304,0.00021,8e-05,0.8525,1.284,Active across 3/5 temporal folds or core domain feature
+V151,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V152 (|rho|=0.969 >= 0.95)
+V152,Selected_Stable,Stable_Feature,4,4068.7892,0.0003,6e-05,0.8525,1.284,Active across 4/5 temporal folds or core domain feature
+V153,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V155 (|rho|=0.989 >= 0.95)
+V154,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V155 (|rho|=0.986 >= 0.95)
+V155,Selected_Stable,Stable_Feature,5,6357.0132,0.00218,0.00023,0.8525,1.284,Active across 5/5 temporal folds or core domain feature
+V156,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V158 (|rho|=0.953 >= 0.95)
+V157,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V158 (|rho|=0.992 >= 0.95)
+V158,Selected_Stable,Stable_Feature,2,1721.5816,6e-05,0.0,0.8525,1.284,Active across 2/5 temporal folds or core domain feature
+V159,Selected_Stable,Stable_Feature,3,960.1248,0.0,-0.0,0.8525,1.284,Active across 3/5 temporal folds or core domain feature
+V160,Selected_Stable,Stable_Feature,4,1843.7556,1e-05,1e-05,0.8525,1.284,Active across 4/5 temporal folds or core domain feature
+V161,Selected_Stable,Stable_Feature,3,4582.6458,0.00015,5e-05,0.8525,1.284,Active across 3/5 temporal folds or core domain feature
+V162,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V161 (|rho|=0.966 >= 0.95)
+V163,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V161 (|rho|=0.985 >= 0.95)
+V164,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V165 (|rho|=0.968 >= 0.95)
+V165,Selected_Stable,Stable_Feature,5,7533.7044,0.0012,9e-05,0.8525,1.284,Active across 5/5 temporal folds or core domain feature
+V166,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8525,1.284,Collinear with V145 (|rho|=0.968 >= 0.95)
+V167,Selected_Stable,Stable_Feature,2,232.718,0.0,-2e-05,0.7534,3.5,Active across 2/5 temporal folds or core domain feature
+V168,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.221)"
+V169,Selected_Stable,Stable_Feature,5,1898.307,0.00072,-3e-05,0.7531,3.517,Active across 5/5 temporal folds or core domain feature
+V170,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V171 (|rho|=0.954 >= 0.95)
+V171,Selected_Stable,Stable_Feature,2,284.7842,6e-05,2e-05,0.7531,3.517,Active across 2/5 temporal folds or core domain feature
+V172,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V205 (|rho|=0.999 >= 0.95)
+V173,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V206 (|rho|=1.000 >= 0.95)
+V174,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V210 (|rho|=0.989 >= 0.95)
+V175,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V210 (|rho|=0.998 >= 0.95)
+V176,Selected_Regime_Specific,Regime_Specific_Feature,1,157.522,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=1, univar_corr=0.222)"
+V177,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.238)"
+V178,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.252)"
+V179,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V178 (|rho|=0.974 >= 0.95)
+V180,Selected_Regime_Specific,Regime_Specific_Feature,1,25.0872,7e-05,3e-05,0.7531,3.517,"Regime-specific signal (active folds=1, univar_corr=0.117)"
+V181,Selected_Regime_Specific,Regime_Specific_Feature,1,60.5774,6e-05,1e-05,0.7534,3.5,"Regime-specific signal (active folds=1, univar_corr=0.105)"
+V182,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V183 (|rho|=0.972 >= 0.95)
+V183,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.117)"
+V184,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V185 (|rho|=0.980 >= 0.95)
+V185,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7531,3.517,"Regime-specific signal (active folds=0, univar_corr=0.121)"
+V186,Selected_Regime_Specific,Regime_Specific_Feature,1,180.3726,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=1, univar_corr=0.337)"
+V187,Selected_Stable,Stable_Feature,4,39433.4418,0.00251,0.00107,0.7534,3.5,Active across 4/5 temporal folds or core domain feature
+V188,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V189 (|rho|=0.972 >= 0.95)
+V189,Selected_Stable,Stable_Feature,5,19744.3192,-0.00106,0.00023,0.7531,3.517,Active across 5/5 temporal folds or core domain feature
+V190,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.336)"
+V191,Selected_Regime_Specific,Regime_Specific_Feature,1,119.6608,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=1, univar_corr=0.174)"
+V192,Selected_Stable,Stable_Feature,2,231.261,9e-05,0.0,0.7534,3.5,Active across 2/5 temporal folds or core domain feature
+V193,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.185)"
+V194,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V195 (|rho|=0.983 >= 0.95)
+V195,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7531,3.517,"Regime-specific signal (active folds=0, univar_corr=0.102)"
+V196,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7534,3.5,"Regime-specific signal (active folds=0, univar_corr=0.176)"
+V197,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V198 (|rho|=0.985 >= 0.95)
+V198,Selected_Stable,Stable_Feature,3,1031.5186,5e-05,0.0,0.7531,3.517,Active across 3/5 temporal folds or core domain feature
+V199,Selected_Regime_Specific,Regime_Specific_Feature,1,135.2624,0.0,1e-05,0.7534,3.5,"Regime-specific signal (active folds=1, univar_corr=0.330)"
+V200,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V201 (|rho|=0.969 >= 0.95)
+V201,Selected_Stable,Stable_Feature,4,3148.6103,-0.00198,0.00011,0.7531,3.517,Active across 4/5 temporal folds or core domain feature
+V202,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V167 (|rho|=0.991 >= 0.95)
+V203,Selected_Stable,Stable_Feature,4,1351.9738,-0.00091,-0.00045,0.7534,3.5,Active across 4/5 temporal folds or core domain feature
+V204,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V168 (|rho|=0.989 >= 0.95)
+V205,Selected_Stable,Stable_Feature,5,1113.398,0.00415,1e-05,0.7534,3.5,Active across 5/5 temporal folds or core domain feature
+V206,Selected_Stable,Stable_Feature,4,542.0764,0.00066,-2e-05,0.7534,3.5,Active across 4/5 temporal folds or core domain feature
+V207,Selected_Stable,Stable_Feature,5,2102.6468,-0.00036,-6e-05,0.7534,3.5,Active across 5/5 temporal folds or core domain feature
+V208,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V210 (|rho|=0.990 >= 0.95)
+V209,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7531,3.517,Collinear with V210 (|rho|=0.966 >= 0.95)
+V210,Selected_Regime_Specific,Regime_Specific_Feature,1,212.7604,-5e-05,-0.00011,0.7531,3.517,"Regime-specific signal (active folds=1, univar_corr=0.036)"
+V211,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V177 (|rho|=0.997 >= 0.95)
+V212,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V178 (|rho|=0.997 >= 0.95)
+V213,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V178 (|rho|=0.972 >= 0.95)
+V214,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V181 (|rho|=0.999 >= 0.95)
+V215,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V183 (|rho|=0.972 >= 0.95)
+V216,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7534,3.5,Collinear with V183 (|rho|=0.999 >= 0.95)
+V217,Selected_Stable,Stable_Feature,4,1263.9816,0.00039,7e-05,0.7673,3.199,Active across 4/5 temporal folds or core domain feature
+V218,Selected_Regime_Specific,Regime_Specific_Feature,1,81.6544,3e-05,-0.0,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.261)"
+V219,Selected_Stable,Stable_Feature,2,491.1698,0.0002,-1e-05,0.7673,3.199,Active across 2/5 temporal folds or core domain feature
+V220,Selected_Stable,Stable_Feature,3,321.4514,0.00016,-2e-05,0.7502,3.384,Active across 3/5 temporal folds or core domain feature
+V221,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V222 (|rho|=0.979 >= 0.95)
+V222,Selected_Regime_Specific,Regime_Specific_Feature,1,238.16,-2e-05,2e-05,0.7502,3.384,"Regime-specific signal (active folds=1, univar_corr=0.104)"
+V223,Selected_Stable,Stable_Feature,5,583.081,0.00122,3e-05,0.7673,3.199,Active across 5/5 temporal folds or core domain feature
+V224,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V267 (|rho|=0.996 >= 0.95)
+V225,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V268 (|rho|=0.998 >= 0.95)
+V226,Selected_Stable,Stable_Feature,4,406.5802,9e-05,3e-05,0.7673,3.199,Active across 4/5 temporal folds or core domain feature
+V227,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V272 (|rho|=0.998 >= 0.95)
+V228,Selected_Stable,Stable_Feature,2,247.6718,2e-05,-2e-05,0.7673,3.199,Active across 2/5 temporal folds or core domain feature
+V229,Selected_Regime_Specific,Regime_Specific_Feature,1,72.1772,-0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.270)"
+V230,Selected_Stable,Stable_Feature,2,231.8112,-1e-05,-1e-05,0.7673,3.199,Active across 2/5 temporal folds or core domain feature
+V231,Selected_Stable,Stable_Feature,4,1309.056,0.00037,-1e-05,0.7673,3.199,Active across 4/5 temporal folds or core domain feature
+V232,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.302)"
+V233,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V232 (|rho|=0.965 >= 0.95)
+V234,Selected_Stable,Stable_Feature,2,266.4628,7e-05,0.0,0.7502,3.384,Active across 2/5 temporal folds or core domain feature
+V235,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.132)"
+V236,Selected_Regime_Specific,Regime_Specific_Feature,1,65.5532,0.0,1e-05,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.165)"
+V237,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V236 (|rho|=0.960 >= 0.95)
+V238,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V239 (|rho|=0.980 >= 0.95)
+V239,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7502,3.384,"Regime-specific signal (active folds=0, univar_corr=0.146)"
+V240,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Zero/negative temporal permutation importance and weak univariate lift
+V241,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Zero/negative temporal permutation importance and weak univariate lift
+V242,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.394)"
+V243,Selected_Stable,Stable_Feature,2,4629.0201,-0.00111,-4e-05,0.7673,3.199,Active across 2/5 temporal folds or core domain feature
+V244,Selected_Regime_Specific,Regime_Specific_Feature,1,742.6454,0.00068,1e-05,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.401)"
+V245,Selected_Stable,Stable_Feature,2,1622.8566,-0.0024,0.0001,0.7502,3.384,Active across 2/5 temporal folds or core domain feature
+V246,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.382)"
+V247,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.259)"
+V248,Selected_Regime_Specific,Regime_Specific_Feature,1,119.6728,-1e-05,2e-05,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.231)"
+V249,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.252)"
+V250,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Zero/negative temporal permutation importance and weak univariate lift
+V251,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V250 (|rho|=0.993 >= 0.95)
+V252,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.235)"
+V253,Selected_Regime_Specific,Regime_Specific_Feature,1,131.0704,7e-05,0.0,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.197)"
+V254,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.220)"
+V255,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V250 (|rho|=0.987 >= 0.95)
+V256,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V250 (|rho|=0.980 >= 0.95)
+V257,Selected_Regime_Specific,Regime_Specific_Feature,1,49.4932,3e-05,0.0,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.373)"
+V258,Selected_Stable,Stable_Feature,5,368584.3513,0.00489,0.00183,0.7673,3.199,Active across 5/5 temporal folds or core domain feature
+V259,Selected_Regime_Specific,Regime_Specific_Feature,1,579.9476,-0.003,0.00012,0.7502,3.384,"Regime-specific signal (active folds=1, univar_corr=0.103)"
+V260,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.7673,3.199,"Regime-specific signal (active folds=0, univar_corr=0.110)"
+V261,Selected_Stable,Stable_Feature,3,445.8914,0.00031,5e-05,0.7673,3.199,Active across 3/5 temporal folds or core domain feature
+V262,Selected_Regime_Specific,Regime_Specific_Feature,1,87.2158,2e-05,0.0,0.7673,3.199,"Regime-specific signal (active folds=1, univar_corr=0.136)"
+V263,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V217 (|rho|=0.990 >= 0.95)
+V264,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V218 (|rho|=0.984 >= 0.95)
+V265,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V219 (|rho|=0.987 >= 0.95)
+V266,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V223 (|rho|=0.999 >= 0.95)
+V267,Selected_Stable,Stable_Feature,2,141.598,0.00019,1e-05,0.7673,3.199,Active across 2/5 temporal folds or core domain feature
+V268,Selected_Stable,Stable_Feature,3,340.304,3e-05,-1e-05,0.7673,3.199,Active across 3/5 temporal folds or core domain feature
+V269,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Zero/negative temporal permutation importance and weak univariate lift
+V270,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V272 (|rho|=0.992 >= 0.95)
+V271,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7502,3.384,Collinear with V272 (|rho|=0.985 >= 0.95)
+V272,Selected_Stable,Stable_Feature,3,305.5538,-0.00015,-0.0,0.7502,3.384,Active across 3/5 temporal folds or core domain feature
+V273,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V231 (|rho|=0.997 >= 0.95)
+V274,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V232 (|rho|=0.997 >= 0.95)
+V275,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V232 (|rho|=0.962 >= 0.95)
+V276,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V235 (|rho|=0.999 >= 0.95)
+V277,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V236 (|rho|=0.998 >= 0.95)
+V278,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.7673,3.199,Collinear with V236 (|rho|=0.958 >= 0.95)
+V279,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V306 (|rho|=0.995 >= 0.95)
+V280,Selected_Stable,Stable_Feature,4,2136.5488,0.00029,0.00019,0.0,0.211,Active across 4/5 temporal folds or core domain feature
+V281,Selected_Stable,Stable_Feature,5,3068.4243,0.00154,0.00036,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+V282,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.002,1.218,Collinear with V283 (|rho|=0.955 >= 0.95)
+V283,Selected_Stable,Stable_Feature,5,9982.2812,0.00179,0.00018,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+V284,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V309 (|rho|=0.999 >= 0.95)
+V285,Selected_Stable,Stable_Feature,5,4971.3244,-0.00074,0.00024,0.0,0.211,Active across 5/5 temporal folds or core domain feature
+V286,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V311 (|rho|=1.000 >= 0.95)
+V287,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V312 (|rho|=0.993 >= 0.95)
+V288,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.002,1.218,Collinear with V315 (|rho|=0.979 >= 0.95)
+V289,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.002,1.218,Collinear with V315 (|rho|=0.995 >= 0.95)
+V290,Selected_Regime_Specific,Regime_Specific_Feature,1,39.0812,3e-05,-2e-05,0.0,0.211,"Regime-specific signal (active folds=1, univar_corr=0.069)"
+V291,Selected_Stable,Stable_Feature,3,374.7636,6e-05,-3e-05,0.0,0.211,Active across 3/5 temporal folds or core domain feature
+V292,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0,0.211,"Regime-specific signal (active folds=0, univar_corr=0.072)"
+V293,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V316 (|rho|=0.999 >= 0.95)
+V294,Selected_Stable,Stable_Feature,5,237089.8622,0.02296,0.00658,0.0,0.211,Active across 5/5 temporal folds or core domain feature
+V295,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0,0.211,"Regime-specific signal (active folds=0, univar_corr=0.112)"
+V296,Selected_Stable,Stable_Feature,5,2777.2158,0.00025,0.00025,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+V297,Selected_Regime_Specific,Regime_Specific_Feature,1,23.0876,7e-05,-2e-05,0.0,0.211,"Regime-specific signal (active folds=1, univar_corr=0.016)"
+V298,Selected_Regime_Specific,Regime_Specific_Feature,1,77.6756,-2e-05,-0.0,0.0,0.211,"Regime-specific signal (active folds=1, univar_corr=0.028)"
+V299,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V321 (|rho|=0.999 >= 0.95)
+V300,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.002,1.218,Collinear with V301 (|rho|=0.954 >= 0.95)
+V301,Selected_Regime_Specific,Regime_Specific_Feature,1,28.2676,0.0,1e-05,0.002,1.218,"Regime-specific signal (active folds=1, univar_corr=0.033)"
+V302,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V303 (|rho|=0.993 >= 0.95)
+V303,Selected_Regime_Specific,Regime_Specific_Feature,1,251.8268,-1e-05,-1e-05,0.0,0.211,"Regime-specific signal (active folds=1, univar_corr=0.129)"
+V304,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V303 (|rho|=0.996 >= 0.95)
+V305,Dropped_Tier1_Constant,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Constant / 100% single value on Temporal Train
+V306,Selected_Stable,Stable_Feature,4,258.711,4e-05,-0.0,0.0,0.211,Active across 4/5 temporal folds or core domain feature
+V307,Selected_Stable,Stable_Feature,5,4130.9082,0.00057,0.00036,0.0,0.211,Active across 5/5 temporal folds or core domain feature
+V308,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V280 (|rho|=0.987 >= 0.95)
+V309,Selected_Stable,Stable_Feature,4,5646.1421,0.00028,0.00025,0.0,0.211,Active across 4/5 temporal folds or core domain feature
+V310,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V285 (|rho|=0.977 >= 0.95)
+V311,Selected_Stable,Stable_Feature,5,1744.4968,5e-05,-2e-05,0.0,0.211,Active across 5/5 temporal folds or core domain feature
+V312,Selected_Stable,Stable_Feature,5,8958.5273,0.00158,0.00101,0.0,0.211,Active across 5/5 temporal folds or core domain feature
+V313,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.002,1.218,Collinear with V315 (|rho|=0.983 >= 0.95)
+V314,Selected_Stable,Stable_Feature,5,2278.9614,-0.0001,3e-05,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+V315,Selected_Stable,Stable_Feature,5,3078.7782,0.00035,0.00015,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+V316,Selected_Stable,Stable_Feature,4,590.3838,0.00023,3e-05,0.0,0.211,Active across 4/5 temporal folds or core domain feature
+V317,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V294 (|rho|=0.998 >= 0.95)
+V318,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V295 (|rho|=0.999 >= 0.95)
+V319,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V297 (|rho|=1.000 >= 0.95)
+V320,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,0.211,Collinear with V298 (|rho|=0.999 >= 0.95)
+V321,Selected_Stable,Stable_Feature,2,2142.067,9e-05,-0.0,0.0,0.211,Active across 2/5 temporal folds or core domain feature
+V322,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V331 (|rho|=0.995 >= 0.95)
+V323,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V332 (|rho|=0.990 >= 0.95)
+V324,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V333 (|rho|=0.991 >= 0.95)
+V325,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V334 (|rho|=1.000 >= 0.95)
+V326,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V335 (|rho|=0.998 >= 0.95)
+V327,Selected_Stable,Stable_Feature,2,3563.9072,8e-05,9e-05,0.8518,1.293,Active across 2/5 temporal folds or core domain feature
+V328,Selected_Regime_Specific,Regime_Specific_Feature,1,80.182,0.0,-0.0,0.8518,1.293,"Regime-specific signal (active folds=1, univar_corr=0.042)"
+V329,Selected_Stable,Stable_Feature,3,238.553,5e-05,3e-05,0.8518,1.293,Active across 3/5 temporal folds or core domain feature
+V330,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V329 (|rho|=0.962 >= 0.95)
+V331,Selected_Stable,Stable_Feature,3,602.9536,8e-05,-5e-05,0.8518,1.293,Active across 3/5 temporal folds or core domain feature
+V332,Selected_Stable,Stable_Feature,2,325.4302,5e-05,-8e-05,0.8518,1.293,Active across 2/5 temporal folds or core domain feature
+V333,Selected_Stable,Stable_Feature,2,856.921,0.00026,0.00011,0.8518,1.293,Active across 2/5 temporal folds or core domain feature
+V334,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Zero/negative temporal permutation importance and weak univariate lift
+V335,Selected_Stable,Stable_Feature,2,4554.0837,0.00011,4e-05,0.8518,1.293,Active across 2/5 temporal folds or core domain feature
+V336,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V327 (|rho|=0.999 >= 0.95)
+V337,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V328 (|rho|=0.999 >= 0.95)
+V338,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V329 (|rho|=0.998 >= 0.95)
+V339,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8518,1.293,Collinear with V329 (|rho|=0.961 >= 0.95)
+id_01,Selected_Stable,Stable_Feature,5,2613.264,0.00146,9e-05,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+id_02,Selected_Stable,Stable_Feature,5,4461.9234,0.00095,0.00031,0.0231,3.389,Active across 5/5 temporal folds or core domain feature
+id_03,Selected_Stable,Stable_Feature,4,686.3456,0.00109,0.00014,0.551,2.005,Active across 4/5 temporal folds or core domain feature
+id_04,Selected_Regime_Specific,Regime_Specific_Feature,1,49.345,-0.0,-1e-05,0.551,2.005,"Regime-specific signal (active folds=1, univar_corr=0.030)"
+id_05,Selected_Stable,Stable_Feature,5,1885.8578,8e-05,1e-05,0.0496,1.961,Active across 5/5 temporal folds or core domain feature
+id_06,Selected_Stable,Stable_Feature,5,3078.353,0.00128,0.00034,0.0496,1.961,Active across 5/5 temporal folds or core domain feature
+id_07,Dropped_Tier3_Low_Importance,Low_Value_Dropped,1,40.8904,1e-05,1e-05,0.9646,1.039,Zero/negative temporal permutation importance and weak univariate lift
+id_08,Dropped_Tier3_Low_Importance,Low_Value_Dropped,1,104.4275,-0.00024,1e-05,0.9646,1.039,Zero/negative temporal permutation importance and weak univariate lift
+id_09,Selected_Stable,Stable_Feature,4,1233.3704,0.00024,0.00012,0.4886,2.092,Active across 4/5 temporal folds or core domain feature
+id_10,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.4886,2.092,Zero/negative temporal permutation importance and weak univariate lift
+id_11,Selected_Regime_Specific,Regime_Specific_Feature,1,101.6116,0.0,1e-05,0.0221,3.249,"Regime-specific signal (active folds=1, univar_corr=0.004)"
+id_12,Selected_Stable,Stable_Feature,2,407.5956,4e-05,-1e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+id_13,Selected_Stable,Stable_Feature,5,1444.8164,0.00012,4e-05,0.127,1.906,Active across 5/5 temporal folds or core domain feature
+id_14,Selected_Stable,Stable_Feature,5,1861.8668,5e-05,-4e-05,0.4337,0.377,Active across 5/5 temporal folds or core domain feature
+id_15,Selected_Stable,Stable_Feature,2,413.2298,-1e-05,-0.0,0.0221,3.249,Active across 2/5 temporal folds or core domain feature
+id_16,Selected_Stable,Stable_Feature,2,271.3672,3e-05,-1e-05,0.1021,1.0,Active across 2/5 temporal folds or core domain feature
+id_17,Selected_Stable,Stable_Feature,5,1988.316,0.00044,7e-05,0.0314,1.578,Active across 5/5 temporal folds or core domain feature
+id_18,Selected_Stable,Stable_Feature,5,2148.0304,6e-05,0.0,0.6894,1.128,Active across 5/5 temporal folds or core domain feature
+id_19,Selected_Stable,Stable_Feature,4,1404.1624,0.00016,-3e-05,0.0317,1.595,Active across 4/5 temporal folds or core domain feature
+id_20,Selected_Stable,Stable_Feature,5,5044.5622,0.00162,0.00052,0.0319,1.569,Active across 5/5 temporal folds or core domain feature
+id_21,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.9646,1.039,Zero/negative temporal permutation importance and weak univariate lift
+id_22,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.9645,1.036,Zero/negative temporal permutation importance and weak univariate lift
+id_23,Selected_Stable,Stable_Feature,3,220.513,1e-05,2e-05,0.9645,1.036,Active across 3/5 temporal folds or core domain feature
+id_24,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.9675,1.068,Zero/negative temporal permutation importance and weak univariate lift
+id_25,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.9648,1.037,Zero/negative temporal permutation importance and weak univariate lift
+id_26,Dropped_Tier3_Low_Importance,Low_Value_Dropped,1,44.2072,-3e-05,-0.0,0.9646,1.034,Zero/negative temporal permutation importance and weak univariate lift
+id_27,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.9645,1.036,Zero/negative temporal permutation importance and weak univariate lift
+id_28,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0221,3.249,Zero/negative temporal permutation importance and weak univariate lift
+id_29,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0221,3.249,Zero/negative temporal permutation importance and weak univariate lift
+id_30,Selected_Stable,Stable_Feature,4,1027.8448,0.00031,0.00012,0.4514,0.383,Active across 4/5 temporal folds or core domain feature
+id_31,Selected_Stable,Stable_Feature,5,2914.8026,0.00043,8e-05,0.0249,2.775,Active across 5/5 temporal folds or core domain feature
+id_32,Selected_Stable,Stable_Feature,5,5841.4406,0.00261,0.0007,0.4512,0.385,Active across 5/5 temporal folds or core domain feature
+id_33,Selected_Stable,Stable_Feature,5,1475.648,0.0004,0.00012,0.4869,0.424,Active across 5/5 temporal folds or core domain feature
+id_34,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.4508,0.387,Zero/negative temporal permutation importance and weak univariate lift
+id_35,Dropped_Tier3_Low_Importance,Low_Value_Dropped,0,0.0,0.0,0.0,0.0221,3.249,Zero/negative temporal permutation importance and weak univariate lift
+id_36,Selected_Regime_Specific,Regime_Specific_Feature,1,47.8184,1e-05,1e-05,0.0221,3.249,"Regime-specific signal (active folds=1, univar_corr=0.000)"
+id_37,Selected_Regime_Specific,Regime_Specific_Feature,1,66.2202,-4e-05,0.0,0.0221,3.249,"Regime-specific signal (active folds=1, univar_corr=0.000)"
+id_38,Selected_Stable,Stable_Feature,5,1313.7504,0.00051,8e-05,0.0221,3.249,Active across 5/5 temporal folds or core domain feature
+DeviceType,Selected_Stable,Stable_Feature,5,3350.5242,0.00145,8e-05,0.0235,3.144,Active across 5/5 temporal folds or core domain feature
+DeviceInfo,Selected_Stable,Stable_Feature,5,5893.9127,0.00071,2e-05,0.1737,0.663,Active across 5/5 temporal folds or core domain feature
+has_identity,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with missing_rate_id (|rho|=0.985 >= 0.95)
+Amt_cents,Selected_Stable,Stable_Feature,5,3727.1916,0.00149,0.00048,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+n_missing_C,Dropped_Tier1_Constant,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Constant / 100% single value on Temporal Train
+missing_rate_C,Dropped_Tier1_Constant,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Constant / 100% single value on Temporal Train
+n_missing_D,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with missing_rate_D (|rho|=1.000 >= 0.95)
+missing_rate_D,Selected_Stable,Stable_Feature,5,1786.8114,0.00077,0.00015,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+n_missing_M,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with missing_rate_M (|rho|=1.000 >= 0.95)
+missing_rate_M,Selected_Stable,Stable_Feature,4,1209.7956,0.00022,0.00019,0.0,1.0,Active across 4/5 temporal folds or core domain feature
+n_missing_V,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with missing_rate_V (|rho|=1.000 >= 0.95)
+missing_rate_V,Selected_Stable,Stable_Feature,5,5076.0498,0.00387,0.00063,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+n_missing_id,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with missing_rate_id (|rho|=1.000 >= 0.95)
+missing_rate_id,Selected_Stable,Stable_Feature,4,816.8418,3e-05,4e-05,0.0,1.0,Active across 4/5 temporal folds or core domain feature
+elapsed_hour,Selected_Stable,Stable_Feature,5,2968.1212,0.00041,0.0002,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+day_cycle,Selected_Stable,Stable_Feature,3,304.2642,-1e-05,-2e-05,0.0,1.0,Active across 3/5 temporal folds or core domain feature
+hour_sin,Selected_Stable,Stable_Feature,5,3496.1123,0.00056,0.00026,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+hour_cos,Selected_Stable,Stable_Feature,2,686.9086,-7e-05,-2e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+day_sin,Selected_Stable,Stable_Feature,3,354.255,-2e-05,-0.0,0.0,1.0,Active across 3/5 temporal folds or core domain feature
+day_cos,Selected_Stable,Stable_Feature,2,409.162,-3e-05,-4e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+D1_anchor,Selected_Stable,Stable_Feature,5,65342.124,0.0082,0.0051,0.002,1.218,Active across 5/5 temporal folds or core domain feature
+D4_anchor,Selected_Stable,Stable_Feature,5,12909.3346,0.00238,0.00087,0.2959,0.958,Active across 5/5 temporal folds or core domain feature
+D6_anchor,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.8762,4.039,Collinear with D4_anchor (|rho|=0.973 >= 0.95)
+D8_anchor,Selected_Stable,Stable_Feature,5,9277.7852,0.00091,0.0008,0.8696,4.024,Active across 5/5 temporal folds or core domain feature
+D9_anchor,Selected_Stable,Stable_Feature,5,3430.6271,0.0007,0.00011,0.8696,4.024,Active across 5/5 temporal folds or core domain feature
+D10_anchor,Selected_Stable,Stable_Feature,5,14057.8852,0.00182,0.00091,0.1405,0.662,Active across 5/5 temporal folds or core domain feature
+D11_anchor,Selected_Stable,Stable_Feature,4,1747.1964,4e-05,-0.0,0.5207,0.402,Active across 4/5 temporal folds or core domain feature
+D13_anchor,Selected_Stable,Stable_Feature,3,789.9864,0.00076,4e-05,0.8963,4.075,Active across 3/5 temporal folds or core domain feature
+D15_anchor,Selected_Stable,Stable_Feature,5,23218.4292,0.00608,0.00201,0.1646,0.699,Active across 5/5 temporal folds or core domain feature
+TransactionAmt_log,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with TransactionAmt (|rho|=1.000 >= 0.95)
+is_round_dollar,Selected_Stable,Stable_Feature,0,0.0,0.0,0.0,0.0,1.0,Active across 0/5 temporal folds or core domain feature
+email_domain_match,Selected_Stable,Stable_Feature,4,15572.1433,0.00284,0.00036,0.0,1.0,Active across 4/5 temporal folds or core domain feature
+P_email_provider,Selected_Stable,Stable_Feature,5,8403.7469,0.0042,0.00154,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+P_email_tld,Selected_Stable,Stable_Feature,5,7692.68,0.00194,0.00077,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+R_email_provider,Selected_Stable,Stable_Feature,5,6902.6468,0.00134,0.00044,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+R_email_tld,Selected_Stable,Stable_Feature,4,1511.3318,0.00121,0.00026,0.0,1.0,Active across 4/5 temporal folds or core domain feature
+device_brand,Selected_Stable,Stable_Feature,5,5420.8223,8e-05,8e-05,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+os_family,Selected_Stable,Stable_Feature,2,129.2202,0.00012,7e-05,0.0,1.0,Active across 2/5 temporal folds or core domain feature
+browser_family,Selected_Stable,Stable_Feature,4,2148.5656,0.00038,8e-05,0.0,1.0,Active across 4/5 temporal folds or core domain feature
+card1_is_missing,Dropped_Tier1_Constant,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Constant / 100% single value on Temporal Train
+no_global_history,Dropped_Tier1_Constant,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Constant / 100% single value on Temporal Train
+has_card1_history,Selected_Stable,Stable_Feature,0,0.0,0.0,0.0,0.0,1.0,Active across 0/5 temporal folds or core domain feature
+card1_cnt_prior,Selected_Stable,Stable_Feature,5,5324.4456,0.00019,0.00038,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card1_cnt_prior_log,Dropped_Tier2_Collinear,Low_Value_Dropped,0,0.0,0.0,0.0,0.0,1.0,Collinear with card1_cnt_prior (|rho|=1.000 >= 0.95)
+card1_mean_amt_prior,Selected_Stable,Stable_Feature,5,19032.5522,0.00447,0.00271,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+Amt_to_card1_mean_prior,Selected_Stable,Stable_Feature,5,13011.8989,0.00324,0.00151,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card1_freq,Selected_Stable,Stable_Feature,5,38340.5148,0.00416,0.00485,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card2_freq,Selected_Stable,Stable_Feature,5,18008.8672,0.00505,0.00187,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card3_freq,Selected_Stable,Stable_Feature,5,10636.1258,0.00355,0.00132,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+card5_freq,Selected_Stable,Stable_Feature,5,3842.9066,0.00071,0.00024,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+addr1_freq,Selected_Stable,Stable_Feature,5,19449.9847,0.006,0.00286,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+addr2_freq,Selected_Regime_Specific,Regime_Specific_Feature,0,0.0,0.0,0.0,0.0,1.0,"Regime-specific signal (active folds=0, univar_corr=0.155)"
+P_emaildomain_freq,Selected_Stable,Stable_Feature,5,5749.332,0.00157,0.0004,0.0,1.0,Active across 5/5 temporal folds or core domain feature
+R_emaildomain_freq,Selected_Stable,Stable_Feature,5,8670.9438,0.00372,0.00061,0.0,1.0,Active across 5/5 temporal folds or core domain feature

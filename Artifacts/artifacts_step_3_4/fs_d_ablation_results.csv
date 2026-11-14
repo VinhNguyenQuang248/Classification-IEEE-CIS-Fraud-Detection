@@ -1,0 +1,5 @@
+Configuration,Num_D_Features_Used,Mean_Temporal_ROC_AUC,Mean_Temporal_AP
+A_Raw_D_Only,15,0.8463,0.4215
+B_Anchor_D_Only,15,0.8413,0.4095
+C_Raw_plus_Selected_Anchor,24,0.8479,0.4175
+D_No_D_Features,0,0.7952,0.3577
